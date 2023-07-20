@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!--***************************** HEAD ******************************** -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,700,0,200" />
+</head>
+
+<!---------------------------------------------- BODY --------------------------------------------------->
+<body class="h-screen w-full overflow-hidden flex justify-center items-center ">
+
+    <!----------------------------- INPUT FORM ------------------------------------>
+    <div class="max-w-6xl border-2 border-black ">
+        <form class="p-4" id="form">
+
+            <!----------------------------------- NAME , ROLL NUMBER , DOB --------------------------------------->
+            <div class="grid grid-cols-3 mb-3">
+                <div class="mr-10">
+                    <label for="name" class="text-xl">Name</label>
+                    <br>
+                    <input id="name" placeholder="xyz (by default)" type="text" class="border-2 border-black p-insideInputPadding w-full ">
+                </div>
+
+                <div class="mr-10">
+                    <label for="roll" class="text-xl">Roll No. </label>
+                    <br>
+                    <input id="roll" type="number" placeholder="00 (by default)"  class="border-2 border-black p-insideInputPadding w-full ">
+                </div>
+
+                <div>
+                    <label for="dob" class="text-xl">D.O.B.</label>
+                    <br>
+                    <input id="dob" type="date" placeholder="0/0/0 (by default)"  class="border-2 border-black p-insideInputPadding w-full ">
+                </div>
+            </div>
+
+            <!----------------------------------- CLASS , SECTION , CONTACT --------------------------------------->
+            <div class="grid grid-cols-3 mb-3">
+
+                <div class="mr-10">
+                    <label for="standard" class="text-xl">standard</label>
+                    <br>
+                    <input id="standard" type="number" placeholder="1 (by default)"  class="border-2 border-black p-insideInputPadding w-full ">
+                </div>
+
+                <div class="mr-10">
+                    <label for="section" class="text-xl">section</label>
+                    <br>
+                    <input id="section" type="text" placeholder="A (by default)"  class="border-2 border-black p-insideInputPadding w-full ">
+                </div>
+
+                
+                <div>
+                    <label for="contact" class="text-xl">Contact</label>
+                    <br>
+                    <input id="contact" type="number" placeholder="7023XXXXXX (by default)"   class="border-2 border-black p-insideInputPadding w-full ">
+                </div>
+
+            </div>
+
+            <!----------------------------------- FATHER , MOTHER , CONTACT --------------------------------------->
+            <div class="grid grid-cols-3 mb-3">
+
+                <div class="mr-10">
+                    <label for="Fname" class="text-xl">Father Name</label>
+                    <br>
+                    <input id="Fname" type="text" placeholder="pita shri (by default)"  class="border-2 border-black p-insideInputPadding w-full ">
+                </div>
+
+                <div class="mr-10">
+                    <label for="Mname" class="text-xl">Mother Name</label>
+                    <br>
+                    <input id="Mname" type="text" placeholder="mata ji (by default)"  class="border-2 border-black p-insideInputPadding w-full ">
+                </div>
+
+                
+                <div>
+                    <label for="address" class="text-xl">Address</label>
+                    <br>
+                    <input id="address" type="text" placeholder="chor bajar (by default)"  class="border-2 border-black p-insideInputPadding w-full ">
+                </div>
+            </div>
+
+            <!----------------------------------- English --------------------------------------->
+            <div class="grid grid-cols-3 mb-3">
+
+                <div class="mr-10">
+                    <label for="englih" class="text-xl">English Annual Marks</label>
+                    <br>
+                    <input id="english" type="number" max="100" placeholder="0 (by default)"  class="border-2 border-black p-insideInputPadding w-full ">
+                </div>
+
+                <div class="mr-10">
+                    <label for="englihM" class="text-xl">English MST Marks</label>
+                    <br>
+                    <input id="englihM" type="number" max="30" placeholder="0 (by default)" class="border-2 border-black p-insideInputPadding w-full ">
+                </div>
+
+                <div class="mr-10">
+                    <label for="englishP" class="text-xl">English Practical Marks</label>
+                    <br>
+                    <input id="englishP" type="number" max="20" placeholder="0 (by default)" class="border-2 border-black p-insideInputPadding w-full ">
+                </div>
+
+                
+                
+            </div>
+
+
+            <!----------------------------------- Hindi --------------------------------------->
+            <div class="grid grid-cols-3 mb-3">
+
+                <div class="mr-10">
+                    <label for="hindi" class="text-xl">Hindi Annual Marks</label>
+                    <br>
+                    <input id="hindi" type="number" max="100" placeholder="0 (by default)" class="border-2 border-black p-insideInputPadding w-full ">
+                </div>
+
+                <div class="mr-10">
+                    <label for="hindiM" class="text-xl">Hindi MST Marks</label>
+                    <br>
+                    <input id="hindiM" type="number" max="30" placeholder="0 (by default)" class="border-2 border-black p-insideInputPadding w-full ">
+                </div>
+
+                <div class="mr-10">
+                    <label for="hindiP" class="text-xl">Hindi Practical Marks</label>
+                    <br>
+                    <input id="hindiP" type="number" max="20" placeholder="0 (by default)" class="border-2 border-black p-insideInputPadding w-full ">
+                </div>
+
+                
+                
+            </div>
+
+             <!----------------------------------- Physics --------------------------------------->
+            <div class="grid grid-cols-3 mb-3">
+
+                <div class="mr-10">
+                    <label for="physics" class="text-xl">Physics Annual Marks</label>
+                    <br>
+                    <input id="physics" type="number" max="100" placeholder="0 (by default)" class="border-2 border-black p-insideInputPadding w-full ">
+                </div>
+
+                <div class="mr-10">
+                    <label for="physicsM" class="text-xl">Physics MST Marks</label>
+                    <br>
+                    <input id="physicsM" type="number" max="30" placeholder="0 (by default)" class="border-2 border-black p-insideInputPadding w-full ">
+                </div>
+
+                <div class="mr-10">
+                    <label for="physicsP" class="text-xl">Physics Practical Marks</label>
+                    <br>
+                    <input id="physicsP" type="number" max="20" placeholder="0 (by default)" class="border-2 border-black p-insideInputPadding w-full ">
+                </div>
+
+                
+                
+            </div>
+
+            
+             <!----------------------------------- Chemistry --------------------------------------->
+            <div class="grid grid-cols-3 mb-3">
+
+                <div class="mr-10">
+                    <label for="chemistry" class="text-xl">Chemistry Annual Marks</label>
+                    <br>
+                    <input id="chemistry" type="number" max="100" placeholder="0 (by default)" class="border-2 border-black p-insideInputPadding w-full ">
+                </div>
+
+                <div class="mr-10">
+                    <label for="chemistryM" class="text-xl">Chemistry MST Marks</label>
+                    <br>
+                    <input id="chemistryM" type="number" max="30" placeholder="0 (by default)" class="border-2 border-black p-insideInputPadding w-full ">
+                </div>
+
+                <div class="mr-10">
+                    <label for="chemistryP" class="text-xl">Chemistry Practical Marks</label>
+                    <br>
+                    <input id="chemistryP" type="number" max="20" placeholder="0 (by default)" class="border-2 border-black p-insideInputPadding w-full ">
+                </div>
+            </div>
+
+            <!----------------------------------- Maths --------------------------------------->
+            <div class="grid grid-cols-3 mb-3">
+
+                <div class="mr-10">
+                    <label for="maths" class="text-xl">Maths Annual Marks</label>
+                    <br>
+                    <input id="maths" type="number" max="100" placeholder="0 (by default)" class="border-2 border-black p-insideInputPadding w-full ">
+                </div>
+
+                <div class="mr-10">
+                    <label for="mathsM" class="text-xl">Maths MST Marks</label>
+                    <br>
+                    <input id="mathsM" type="number" placeholder="0 (by default)" max="20" class="border-2 border-black p-insideInputPadding w-full ">
+                </div>
+
+                <div class="mr-10">
+                    <label for="mathsP" class="text-xl">Maths Practical Marks</label>
+                    <br>
+                    <input id="mathsP" type="number" placeholder="0 (by default)" max="30" class="border-2 border-black p-insideInputPadding w-full ">
+                </div>
+
+                
+                
+            </div>
+
+            <!----------------------------------- Submit --------------------------------------->
+            <div class="flex justify-center ">
+                <button class="bg-green-500 p-4 w-full">
+                    <input type="submit" class="group ">
+                </button>
+            </div>
+
+        </form>
+    </div>
+
+    <!----------------------------- RESULT ------------------------------------>
+    <div id="result" class="w-widthOfResult border-4 border-black relative hidden ">
+
+        <!-- COLLEGE NAME -->
+        <div class="flex justify-center py-4">
+            <p class="text-3xl">XYZ College , Indore</p>
+        </div>
+
+        <hr class="w-full mx-auto border-2 border-black">
+
+        <!-- INFO OF STUDENT -->
+        <div class="grid grid-cols-2 px-4 py-4  ">
+
+            <!-- NAME -->
+            <div class="flex gap-3">
+                <label class="font-bold text-xl" for="nameR"> Name : </label>
+                <p id="nameR" class="text-xl"> xyz </p>
+            </div>
+
+            <!-- ROLL NUMBER -->
+            <div class="flex gap-3 pl-4 ">
+                <label class="font-bold text-xl  " for="rollR"> Roll no. : </label>
+                <p id="rollR" class="text-xl"> 00 </p>
+            </div>
+
+             <!-- Father Name -->
+            <div class="flex gap-3 pt-3">
+                <label class="font-bold text-xl" for="FnameR"> Father's Name : </label>
+                <p id="FnameR" class="text-xl"> pita shri </p>
+            </div>
+
+            <!-- CLASS -->
+            <div class="flex gap-3 pt-3 pl-4 ">
+                <label class="font-bold text-xl  " for="standardR"> Standard : </label>
+                <p id="standardR" class="text-xl"> 1 </p>
+            </div>
+
+             <!-- MOTHER'S NUMBER -->
+            <div class="flex gap-3 pt-3 ">
+                <label class="font-bold text-xl" for="MnameR"> Mother's Name : </label>
+                <p id="MnameR" class="text-xl"> mata ji </p>
+            </div>
+
+            <!-- SECTION -->
+            <div class="flex gap-3 pt-3 pl-4 ">
+                <label class="font-bold text-xl  " for="sectionR"> Section : </label>
+                <p id="sectionR" class="text-xl"> A </p>
+            </div>
+
+            <!-- DOB -->
+            <div class="flex gap-3 pt-3 ">
+                <label class="font-bold text-xl" for="dobR"> D.O.B. : </label>
+                <p id="dobR" class="text-xl"> 20/10/2020 </p>
+            </div>
+
+            <!-- CONTACT NUMBER -->
+            <div class="flex gap-3 pt-3 ">
+                <label class="font-bold text-xl  " for="contactR"> Contact Number : </label>
+                <p id="contactR" class="text-xl"> 7023XXXXXX </p>
+            </div>
+
+             <!-- ADDRESS -->
+            <div class="flex gap-3 pt-3 col-span-2">
+                <label class="font-bold text-xl  " for="addressR"> Address : </label>
+                <p id="addressR" class="text-xl"> Chor bajar </p>
+            </div>
+        </div>
+
+        <hr class="w-full mx-auto border-2 border-black">
+
+
+        <!-- MARKS -->
+        <div class="grid grid-cols-4 grid-rows-6 ">
+
+            <!-- BASE OF THE TABLE -->
+             <div class="font-bold text-xl border-2 border-black flex justify-center items-center">Subject</div>
+            <div class="font-bold text-xl border-2 border-black px-3 ">Annual Exam Marks</div>
+            <div class="font-bold text-xl border-2 border-black flex justify-center items-center  ">Mid Sem Marks</div>
+            <div class="font-bold text-xl border-2 border-black flex px-3 ">Practical Exam Marks</div>
+
+            <!-- English -->
+            <div class="text-xl border-2 border-black flex justify-center items-center ">English</div>
+            <div id="AnnualEnglish" class="text-xl border-2 border-black flex justify-center items-center  ">00</div>
+            <div id="midEnglish" class="text-xl border-2 border-black flex justify-center items-center  ">00</div>
+            <div id="PracticalEnglish" class="text-xl border-2 border-black flex justify-center items-center  ">00</div>
+
+            <!-- HINDI -->
+            <div class="text-xl border-2 border-black flex justify-center items-center ">Hindi</div>
+            <div id="AnnualHindi" class="text-xl border-2 border-black flex justify-center items-center  ">00</div>
+            <div id="midHindi" class="text-xl border-2 border-black flex justify-center items-center  ">00</div>
+            <div id="PracticalHindi" class="text-xl border-2 border-black flex justify-center items-center  ">00</div>
+
+            <!-- PHYSICS -->
+            <div class="text-xl border-2 border-black flex justify-center items-center ">Physics</div>
+            <div id="AnnualPhysics" class="text-xl border-2 border-black flex justify-center items-center  ">00</div>
+            <div id="midPhysics" class="text-xl border-2 border-black flex justify-center items-center  ">00</div>
+            <div id="PracticalPhysics" class="text-xl border-2 border-black flex justify-center items-center  ">00</div>
+
+            <!-- CHEMISTRY -->
+            <div class="text-xl border-2 border-black flex justify-center items-center ">Chemistry</div>
+            <div id="AnnualChemistry" class="text-xl border-2 border-black flex justify-center items-center  ">00</div>
+            <div id="midChemistry" class="text-xl border-2 border-black flex justify-center items-center  ">00</div>
+            <div id="PracticalChemistry" class="text-xl border-2 border-black flex justify-center items-center  ">00</div>
+
+            <!-- MATHS -->
+            <div class="text-xl border-2 border-black flex justify-center items-center ">Maths</div>
+            <div id="AnnualMaths" class="text-xl border-2 border-black flex justify-center items-center  ">00</div>
+            <div id="midMaths" class="text-xl border-2 border-black flex justify-center items-center  ">00</div>
+            <div id="PracticalMaths" class="text-xl border-2 border-black flex justify-center items-center  ">00</div>
+        </div>
+
+        <!-- CGPA AND RANK -->
+        <div class="flex justify-around py-5 items-center">
+                <div class="font-bold text-xl">CGPA : <span id="cgpa">0.00</span> </div>
+                <div class="font-bold text-xl">Rank : <span id="rank">3</span> </div>
+        </div>
+
+         <!---------------------------------------------- DOWNLOAD BUTTON --------------------------------------------------->
+        <div class="absolute border-4 border-black left-[43rem] bottom-[2rem]">
+            <button id="cardDownload" class="bg-green-500 p-3 flex justify-center items-center gap-2 font-bold w-full group">Download as PDF
+                <span class="material-symbols-outlined">download</span>
+            </button>
+        </div>
+
+    </div>
+
+     <!-- to close the result section  -->
+    <div  id="close-button" class="absolute right-0 top-0  bg-red-500 hidden ">
+        <div class="flex justify-center items-center w-12 h-12 ">
+            <button id="cross-icon" class="material-symbols-outlined  ">close</button>
+        </div>
+    </div>
+
+</body>
+
+
+
+<script src="./index.js"></script>
+
+
+ <!---------------------------------------------- FOR THE PDF DOWNLOAD (jsPDF) --------------------------------------------------->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js" ></script>
+    
+</body>
+</html>
